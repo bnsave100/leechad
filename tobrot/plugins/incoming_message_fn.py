@@ -94,7 +94,7 @@ async def incoming_message_f(client, message):
             await i_m_sefg.edit_text(err_message)
     else:
         await i_m_sefg.edit_text(
-            "**FCUK**! wat have you entered. \nPlease read /help \n"
+            "Last Warn😡😡😡. \nReply To Direct Link And Magnet Link Only\nRead Pinned Message"
             f"<b>API Error</b>: {cf_name}"
         )
 #
@@ -149,7 +149,7 @@ async def incoming_gdrive_message_f(client, message):
         )
     else:
         await i_m_sefg.edit_text(
-            "**FCUK**! wat have you entered. \nPlease read /help \n"
+            "Last Warn😡😡😡. \nReply To Direct Link And Magnet Link Only\nRead Pinned Message."
             f"<b>API Error</b>: {cf_name}"
         )
 
@@ -166,7 +166,7 @@ async def incoming_youtube_dl_f(client, message):
     if len(message.command) > 1:
         if message.command[1] == "gdrive":
             with open('blame_my_knowledge.txt', 'w+') as gg:
-                gg.write("I am noob and don't know what to do that's why I have did this")
+                gg.write("Gdrive Link Are Not Supported")
     LOGGER.info(cf_name)
     if dl_url is not None:
         await i_m_sefg.edit_text("extracting links")
@@ -199,6 +199,6 @@ async def incoming_youtube_dl_f(client, message):
             )
     else:
         await i_m_sefg.edit_text(
-            "**FCUK**! wat have you entered. \nPlease read /help \n"
+            "Last Warn😡😡😡.\n Reply To Youtube,Hotstar,Voot,etc.. Links \nRead Pinned Message \n"
             f"<b>API Error</b>: {cf_name}"
         )
