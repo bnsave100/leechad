@@ -69,19 +69,19 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.command([f"{LEECH_COMMAND}"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["leech@uploaderhb4all"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
     incoming_gdrive_message_handler = MessageHandler(
         incoming_gdrive_message_f,
-        filters=Filters.command([f"{GLEECH_COMMAND}"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["gleech@uploaderhb4all"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_gdrive_message_handler)
     #
     incoming_telegram_download_handler = MessageHandler(
         down_load_media_f,
-        filters=Filters.command([f"{TELEGRAM_LEECH_COMMAND_G}"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["Tleech@uploaderhb4all"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_telegram_download_handler)
     #
@@ -93,25 +93,25 @@ if __name__ == "__main__" :
     #
     incoming_size_checker_handler = MessageHandler(
         check_size_g,
-        filters=Filters.command([f"{GET_SIZE_G}"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["GET_SIZE_G@uploaderhb4all"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_size_checker_handler)
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=Filters.command([f"{YTDL_COMMAND}"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["{YTDl@uploaderhb4all"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #
     status_message_handler = MessageHandler(
         status_message_f,
-        filters=Filters.command([f"{STATUS_COMMAND}"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["STATUS@uploaderhb4all"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(status_message_handler)
     #
     cancel_message_handler = MessageHandler(
         cancel_message_f,
-        filters=Filters.command([f"{CANCEL_COMMAND_G}"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["CANCEl"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(cancel_message_handler)
     #
@@ -143,7 +143,7 @@ if __name__ == "__main__" :
 
     help_text_handler = MessageHandler(
         help_message_f,
-        filters=Filters.command(["help"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["help@uploaderhb4allbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(help_text_handler)
     #
@@ -166,13 +166,13 @@ if __name__ == "__main__" :
     #
     save_thumb_nail_handler = MessageHandler(
         save_thumb_nail,
-        filters=Filters.command([f"{SAVE_THUMBNAIL}"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["SAVETHUMBNAIL@uploaderhb4all"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(save_thumb_nail_handler)
     #
     clear_thumb_nail_handler = MessageHandler(
         clear_thumb_nail,
-        filters=Filters.command([f"{CLEAR_THUMBNAIL}"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["CLEARTHUMBNAIL@uploaderhb4all"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(clear_thumb_nail_handler)
     #
