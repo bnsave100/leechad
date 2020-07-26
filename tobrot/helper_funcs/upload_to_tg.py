@@ -171,15 +171,15 @@ async def upload_to_gdrive(file_upload, message, messa_ge, g_id):
         gjay = size(os.path.getsize(file_upload))
         LOGGER.info(gjay)
         button = []
-        button.append([pyrogram.InlineKeyboardButton(text="☁️ CloudUrl ☁️", url=f"{gau_link}")])
+        button.append([pyrogram.InlineKeyboardButton(text="Join Team Drive🏃‍♂", url="https://telegra.ph/How-To-Join-In-HB4All-Team-Drive-05-19")])
         if INDEX_LINK:
             indexurl = f"{INDEX_LINK}/{file_upload}"
             tam_link = requests.utils.requote_uri(indexurl)
             LOGGER.info(tam_link)
-            button.append([pyrogram.InlineKeyboardButton(text="ℹ️ IndexUrl ℹ️", url=f"{tam_link}")])
+            button.append([pyrogram.InlineKeyboardButton(text="Index Link", url="https://happyboy.hb4all.workers.dev")])
         button_markup = pyrogram.InlineKeyboardMarkup(button)
         await asyncio.sleep(EDIT_SLEEP_TIME_OUT)
-        await messa_ge.reply_text(f"🤖: {file_upload} has been Uploaded successfully to your Cloud <a href='tg://user?id={g_id}'>🤒</a>\n📀 Size: {gjay}", reply_markup=button_markup)
+        await messa_ge.reply_text(f"🤖: Uploaded..🤯\n\n📎File Name: {file_upload}\n📀 Size: {gjay}\n<a href='tg://user?id={g_id}'>🤒</a>\\n\n GDrive Link🔗:{gau_link}\n\n Shareable Link🔗:{tam_link}\n\nStream Link🖥:{tam_link}?a=view\n\n #HB4All More @HB4All_Bot", reply_markup=button_markup)
         #await message.edit_text(f"""🤖: {file_upload} has been Uploaded successfully to your cloud 🤒\n\n☁️ Cloud URL:  <a href="{gau_link}">FileLink</a>\nℹ️ Direct URL:  <a href="{tam_link}">IndexLink</a>""")
         os.remove(file_upload)
         await del_it.delete()
@@ -214,15 +214,15 @@ async def upload_to_gdrive(file_upload, message, messa_ge, g_id):
         gjay = size(getFolderSize(file_upload))
         LOGGER.info(gjay)
         button = []
-        button.append([pyrogram.InlineKeyboardButton(text="☁️ CloudUrl ☁️", url=f"{gau_link}")])
+        button.append([pyrogram.InlineKeyboardButton(text="Join Team Drive🏃‍♂", url="https://telegra.ph/How-To-Join-In-HB4All-Team-Drive-05-19")])
         if INDEX_LINK:
             indexurl = f"{INDEX_LINK}/{file_upload}/"
             tam_link = requests.utils.requote_uri(indexurl)
             LOGGER.info(tam_link)
-            button.append([pyrogram.InlineKeyboardButton(text="ℹ️ IndexUrl ℹ️", url=f"{tam_link}")])
+            button.append([pyrogram.InlineKeyboardButton(text="Index Link", url="https://happyboy.hb4all.workers.dev")])
         button_markup = pyrogram.InlineKeyboardMarkup(button)
         await asyncio.sleep(EDIT_SLEEP_TIME_OUT)
-        await messa_ge.reply_text(f"🤖: Folder has been Uploaded successfully to {tt} in your Cloud <a href='tg://user?id={g_id}'>🤒</a>\n📀 Size: {gjay}", reply_markup=button_markup)
+        await messa_ge.reply_text(f"🤖: Uploaded..🤯\n\n📎File Name: {file_upload}\n📀 Size: {gjay}\n<a href='tg://user?id={g_id}'>🤒</a>\\n\n GDrive Link🔗:{gau_link} \n\n Shareable Link🔗:{tam_link}\n\nStream Link🖥:{tam_link}?a=view\n\n #HB4All More @HB4All_Bot", reply_markup=button_markup)
         #await asyncio.sleep(EDIT_SLEEP_TIME_OUT)
         #await messa_ge.reply_text(f"""🤖: Folder has been Uploaded successfully to {tt} in your cloud 🤒\n\n☁️ Cloud URL:  <a href="{gau_link}">FolderLink</a>\nℹ️ Index Url:. <a href="{tam_link}">IndexLink</a>""")
         shutil.rmtree(file_upload)
