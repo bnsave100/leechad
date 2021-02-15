@@ -2,7 +2,7 @@
 
 ### The Easy Way (Fork this repo and tap on deploy button)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bnsave100/leechad)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bnsave100/leechad/tree/master)
 
 
 
